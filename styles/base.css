@@ -50,6 +50,7 @@ nav ul li {
     margin-top: 5px;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    color: black;
 }
 
     main {
@@ -68,8 +69,10 @@ nav ul li {
         font-size: 25px;
         font-weight: bold;
         color: black;
+
     }
-main li {
+
+    main li {
         margin-left: 480px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -98,7 +101,7 @@ footer img {
     height: auto;
     width: auto;
     float:right;
-    margin-right: 700px;
-    margin-top:-68px;
+    margin-right: 1200px;
+    margin-top:-70px;
     top: 0
 }
