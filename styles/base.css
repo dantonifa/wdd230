@@ -45,7 +45,6 @@ nav {
     font-weight: bold;
 }
 nav ul li {
-    list-style-position: none;
     list-style-type: none;
     margin-top: 5px;
     margin-bottom: 10px;
