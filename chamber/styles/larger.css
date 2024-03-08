@@ -3,6 +3,7 @@
 body {
     display:grid;
     grid-template-rows: auto 200px 200px;
+    grid-template-columns: 1fr;
     margin: 0px;
     padding: 0px;
 }
