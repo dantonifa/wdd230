@@ -1,0 +1,140 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: aliceblue;
+}
+header .course {
+	font-size: 1.6em;
+	color:#333
+}
+h2 {
+	font-size: 1.6em;
+	color:#333;
+}
+nav {
+	display: grid;
+	grid-template-columns: 1fr;
+	background-color: aliceblue;
+	color: blue;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0px;
+}
+main .mobile_view {
+	display: grid;
+	grid-template-rows: 100px 300px 700px 700px 700px;
+	grid-template-columns: 1fr;
+	width: 402px;
+	margin-right: 0;
+	margin-bottom: 30px;
+	padding: 0;
+}
+main .mobile_view .mobile_view_header {
+	display: grid;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	padding: 0;
+	color: black;
+	font-size: 2.5em;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+main .mobile_view .document_title {
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-color: turquoise;
+	color: black;
+	font-size: 2em;
+	width: 408px;
+	height: 300px;
+	padding: 0px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 10px;
+	line-height: auto;
+}
+
+main .mobile_view .principle_container {
+	display: grid;
+	grid-template-rows: 160px 446px;
+	background-color: aliceblue;
+	border-block: 4px solid black;
+	border-right: 4px solid black;
+	border-left: 4px solid black;
+	width: 400px;
+	height: 650px;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	padding: 0px;
+	text-align: center;
+	
+}
+main .mobile_view .principle_container .screen_shot_text {
+	display: grid;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	color: black;
+	text-align: left;
+	padding: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: auto;
+	padding: 0px;
+}
+main .mobile_view .principle_container .screen_shot_text h6 {
+	display: grid;
+	font-size: 2.5em;
+	color: black;
+	text-align: left;
+	padding: 0px;
+	outline-color: black;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	height: auto;
+}
+main .mobile_view .principle_container .screen_shot_text p {
+	display: grid;
+	font-style: underline;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	padding: 0px;
+}
+main .mobile_view .principle_container .screen_shot_image {
+	display: grid;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	width: 400px;
+	height: 446px;
+	padding: 0px;
+	margin-top: 0;
+}
+main .mobile_view .principle_container .screen_shot_image img {
+	max-width: 100%;
+	max-height: 100%;
+	display:block;
+	overflow: hidden;
+
+}
+
+footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: aliceblue;
+	color: black;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0px;
+}
+
