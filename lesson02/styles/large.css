@@ -12,13 +12,6 @@
         width: 1350px;
         background-color: blanchedalmond;
     }
-    main {
-        margin-left: 0;
-        margin-right: 0;
-        width: 1350px;
-        border:1px solid #bbb;
-        background-color: black;
-    }
         header {
         display: grid;
         grid-template-columns: 1fr;
@@ -75,8 +68,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-        grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
         margin-left: 0;
         margin-right: 0;
         width: auto;
@@ -89,16 +82,11 @@
         list-style-type: none;
         font-size: 1.6em;
     }
-    h2 {
-        font-size: 2em;
-        color: navy;
-        text-align: center;
-        background-color: lightgoldenrodyellow;
-        width: 1350px;
-        border:  6px solid aliceblue;
-    }
+
     main {
         display: grid;
+        margin-left: 0;
+        margin-right: 0;
         width:1350px;
         grid-column-start: 1;
         grid-column-end:4;
@@ -231,7 +219,8 @@
         align-content: center;
         justify-content: center;
         margin-left: 3px;
-        width: 452px;
+        margin-right: 3px;
+        width: 449px;
         vertical-align: middle;
         height: auto;
         overflow-x: hidden;
@@ -248,7 +237,6 @@
         grid-template-rows: auto;
         max-width:1362px;
         margin-top: 1rem;
-        border-top: 1px solid rgba (0, 0, 0, 0.1);
         font-size: smaller;
         text-align:center;
     }
