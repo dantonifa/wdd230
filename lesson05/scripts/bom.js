@@ -1,34 +1,22 @@
-const input = document.querySelector("#favchap");
-const button = document.querySelector("button");
-const list = document.querySelector(".list"); // ul
-button.addEventListener("click", function () {
-  let favchap = input.value;
-  input.value = "";
-  constListItem = document.createElement("li");
-  constListItem.textContent = favchap;
-  list.appendChild(constListItem);
-  constListItem.addEventListener("click", function () {
-    constListItem.remove(); // remove the list item
-  });
-});
-button.addEventListener("click", () => {
-  input.value = "";
-  input.focus();
-});
-if (input.value != "") {
-  button.disabled = false;
-} else {
-  button.disabled = true;
-}
-const li = document.createElement("li");
-const deleteButton = document.createElement("button");
-li.textContent = input.value;
-deleteButton.textContent = "❌​";
-li.appendChild(deleteButton);
-list.append(li);
-deleteButton.addEventListener("click", function () {
-  list.removeChild(li);
-  input.focus();
-});
-input.focus();
-input.value = "";
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content="05: Book of Mormon Favorite Chapters Application">
+        <meta name = "author" content="David Antonio Fajardo Ponce">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>"Book of Mormon - Top 10"</title>
+        <link rel="stylesheet" href="styles/bom.css">
+        <script src="scripts/bom.js"></script>
+    </head>
+    <body>
+
+        <div id="myDIV" class="header">
+          <h2 class="todo-list-title">📖 Book of Mormon - Top 10</h2>
+          <input type="text" id="favchap" placeholder="Alma 5">
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        
+        <ul id="myUL"></ul>
+    </body>
+</html>
