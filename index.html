@@ -6,36 +6,58 @@
                             course assignment portal"/>
         <meta name = "author" content = "David Antonio Fajardo Ponce"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="David Antonio Fajardo Ponce - WDD 230 - Web Frontend Development">
+        <meta property="og:description" content="WDD 230 - Web Frontend Development, David Antonio Fajardo Ponce,
+                            course assignment portal">
+        <meta property="og:image" content="images/placeholder.png">
+        <meta property="og:url" content="https://dantonifa.github.io/wdd230/">
         <title>"David Antonio Fajardo Ponce - WDD 230 - Web Frontend Development"</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger_view.css">
         <link rel="icon" href="mountain_favicon.ico">
+        <script src="scripts/toggle.js"></script>
     </head>
     <body>
         <header>
             <picture>
                 <img src="images/placeholder.png" alt="Profile image">
             </picture>
-            <h1>
-                David Antonio Fajardo Ponce
-            </h1>
+            <div class="header_text">
+                <h1>
+                    David Antonio Fajardo Ponce
+                </h1>
+            </div>
         </header>
         <nav>
             <ul id="menu">
-            <li><a href = "#">Home</a></li>
-            <li><a href = "lesson03/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href = "chamber/index.html">Chamber</a></li>
-            <li><a href = "https://www.byui.edu/">BYU-Idaho</a></li>
-            <li><a href = "http://tinyurl.com/y6fnc9h3">Scripture</a></li>
+                <li><a href = "#">Home</a></li>
+                <li><a href = "lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href = "chamber/index.html">Chamber</a></li>
+                <li><a href = "https://www.byui.edu/">BYU-Idaho</a></li>
+                <li><a href = "http://tinyurl.com/y6fnc9h3">Scripture</a></li>
             </ul>
+            <button type="button" onclick="toggle('#menu')" id="hamburger_menu">
+                <img src="images/hamburger_favicon.ico" alt="Menu Icon">
+            </button>    
         </nav>
         <main>
-            <h2>
-                WDD 230: Web Frontend Development
-            </h2>
-            <section class="card">
+            <div class="hero">
+                <div class="hero_text">
+                    <h2>
+                        Tegucigalpa Honduras Temple
+                    </h2>
+                </div>
+                <picture class="hero_img">
+                    <img src="lesson06/tegucigalpa_temple.webp" alt="Hero Image">
+                </picture>
+            </div>
+            <div class="card">
                 <h3>
-                    Learning Activities
+                    WDD 230: Web Frontend Development
+                </h3>
+                <h3>
+                    Lessons and Learning Activities
                 </h3>
                 <ul>
                     <li>01:
@@ -90,12 +112,7 @@
                         </a>
                     </li>
                 </ul>
-            </section>
-            <section class = "card">
-                <h3>
-                    Information
-                </h3>
-            </section>
+            </div>
         </main>
         <footer>
             <div class="country-flag">
@@ -116,9 +133,6 @@
                 </p>
             </div>
          </footer>
-        <script src="scripts/getdates.js"></script>
-    </body>
-</html>
         <script src="scripts/getdates.js"></script>
     </body>
 </html>
