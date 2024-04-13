@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name = "description" content = "WDD 230 - Lesson 07 - Lazy Load">
+        <meta name = "author" content = "David Antonio Fajardo Ponce">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>07 Learning Activity: Lazy Loading</title>
+        <link rel="stylesheet" href="styles/lazyload.css">
+        <script src="scripts/lazyload.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>Raising a boy in the Lord's covenants pathway </h1>
+
+        </header>
+
+        <main>
+
+            <div class = "lazy_images">
+
+                <picture>
+                    <img loading="lazy" src="images/oct_2014_guate_temple.png" alt="Guate Temple" width="400px" height="600px">
+                    <img loading="lazy" src="images/13_oct-2019_teg_temple.png" alt="Tegucigalpa Temple October 2019" width="400px" height="600px">
+                    <img loading="lazy" src="images/13_jul-2019_teg_temple.png" alt="Tegucigalpa Temple July 2019" width="400px" height="600px">
+                    <img loading="lazy" src="images/08_dic_2019_sps.png" alt="San Pedro Sula Ward Chapel December 2019" width="400px" height="600px">
+                    <img loading="lazy" src="images/05_jan_2020_harvie_la.png" alt="Harvie Louisiana January 2020" width="400px" height="600px">
+                    <img loading="lazy" src="images/13_abr_2020.png" alt= "Gardening April 2020" width="400px" height="600px">
+                </picture>
+
+            </div>
+
+            <div class = "content">
+
+                <h2>Lazy Loading</h2>
+
+                <p>Lazy loading is a technique that defers loading of non-essential resources at page load time. Instead, these non-essential resources are loaded at the moment they are needed. This technique can be used to improve the performance of a web page by reducing the initial load time.</p>
+
+                <p>Lazy loading is especially useful for images that are not visible on the initial screen view. By deferring the loading of these images, the initial page load time can be reduced, which can improve the user experience.</p>
+
+                <p>Lazy loading can be implemented using the <code>loading="lazy"</code> attribute on the <code>&lt;img&gt;</code> element. This attribute tells the browser to defer the loading of the image until it is needed. The browser will then load the image when it comes into view, which can help reduce the initial load time of the page.</p>
+
+                <p>Lazy loading can also be implemented using JavaScript. By monitoring the scroll position of the page, JavaScript can determine when an image is in view and load it at that time. This can be useful for more complex lazy loading scenarios, such as loading images in a gallery as the user scrolls through the page.</p>  
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2021 David Antonio Fajardo Ponce</p>
+        </footer>
+    </body>
+</html>
