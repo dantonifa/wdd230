@@ -1,61 +1,63 @@
-body {
-    display: grid;
-    grid-template-rows:  100px 150px 200px 1fr 250px;
-    grid-template-columns: 1fr;
-    margin:0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-header {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    grid-template-rows: 1fr;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: 100px;
-    background-color: limegreen;
-}
-header #sps_logo_img {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 80px;
-    height: auto;
-    padding: 0;
-    margin: 6px 6px 6px 6px;
-}
-header #sps_logo_img img {
-    display: grid;
-    width: auto;
-    height: 80px;
-    object-fit: cover;
-    padding: 0;
-    margin: 0;
-}
-header #sps_logo_text {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: auto;
-    height: 100px;
-    padding: 0;
-    margin: 0;
-}
-header #sps_logo_text h1 {
-    display: grid;
-    margin-top: 40px;
-    font-size: 1.3em;
-    font-weight: bold;
-    color: black;
-    align-items: left;
-    justify-content: left;
+@media screen and (min-width: 481px){
+    body {
+        display: grid;
+        grid-template-rows:  100px 80px 300px 1fr 250px;
+        grid-template-columns: 1fr;
+        margin:0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+    header {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: 1fr;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: 100px;
+        background-color: limegreen;
+    }
+    header #sps_logo_img {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 80px;
+        height: auto;
+        padding: 0;
+        margin: 6px 6px 6px 6px;
+    }
+    header #sps_logo_img img {
+        display: grid;
+        width: auto;
+        height: 80px;
+        object-fit: cover;
+        padding: 0;
+        margin: 0;
+    }
+    header #sps_logo_text {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: auto;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    header #sps_logo_text h1 {
+        display: grid;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 35px;
+        font-weight: bold;
+        color: black;
+        align-items: left;
+        justify-content: left;
+        
+    }
     
-}
-@media only screen and (min-width: 481px) {
     #navigation-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -67,7 +69,7 @@ header #sps_logo_text h1 {
         margin:0;
         background-color: yellow;
         width: 100%;
-        height: auto;
+        height: 80px;
         vertical-align: middle;
         padding: 0;
         margin: 0;
@@ -89,7 +91,7 @@ header #sps_logo_text h1 {
         padding: 0;
         text-decoration: none;
         color: black;
-        font-size: 1.2em;
+        font-size: 30px;
         font-weight: bold;
         text-align: center;
         align-items: center;
@@ -101,182 +103,206 @@ header #sps_logo_text h1 {
         padding: 0;
         text-decoration: none;
         color: black;
-        font-size: 1.2em;
-        font-weight: bold;
         text-align: center;
         align-items: center;
         justify-content: center;
     }
+    #navigation-container #menu {
+        display: none;
+    }
+    #navigation-container #close {
+        display: none;
+    }
     #navigation-container img {
         display: none;
     }
+    
+    #navigation-container ul li a:hover {
+        color: limegreen;
+    }
+    #navigation-container ul li a:active {
+        color: limegreen;
+    }
+    
+    #chamber_hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin: 0;
+        padding: 0;
+        background-image:  url(../images/sps_landscape.png);
+        object-fit: contain;  
+        background-size: scale;
+        overflow-y: hidden;
+        background-repeat: repeat;
+        background-position: top;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #chamber_hero #call_to_action h2 {
+        display: flex;
+        position: relative;
+        text-align: center;
+        margin-left: 25px;
+        margin-top: 25px;
+        vertical-align: middle;
+        text-decoration: double;
+        grid-template-rows: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        font-size: 2.8em;
+        font-weight: bold;
+        color: white;
+    }
+    .main-container {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 1fr;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    .main-container .current-event {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-template-rows: .25fr .25fr .25fr .25fr;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        background-color: yellow;
+        color: black;
+        font-size: 1.6em;
+        text-align: center;
+        align-items: center;
+        justify-content: middle;
+    }
+    .main-container .current-event h2 {
+        display: grid;
+        font-size: 35px;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .main-container .current-event p {
+        display: grid;
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .main-container .spotlight {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-template-rows: 1fr;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        background-color: yellow;
+        text-align: center;
+        align-items: center;
+        justify-content: middle;
+    }
+    
+    .main-container .spotlight img {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    
+    footer {
+        display: grid;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .60fr .40fr;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+        background-color: limegreen;
+    }
+    footer #sps_logo_footer {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: auto;
+        height: auto;
+        line-height: 25px;
+        padding: 0;
+        margin: 6px 6px 6px 6px;
+        align-items: center;
+        justify-content: center;
+    }
+    footer #sps_logo_footer img {
+        display: grid;
+        width: auto;
+        height: 130px;
+        object-fit: cover;
+        padding: 0;
+        margin: 0;
+    }
+    footer #chamber_footer_text {
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    footer #chamber_footer_text p {
+        display: grid;
+        font-size: 1em;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    footer #student_data {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
 }
 
-#navigation-container ul li a:hover {
-    color: limegreen;
-}
-#navigation-container ul li a:active {
-    color: limegreen;
-}
 
-#chamber_hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    top: 150px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 200px;
-    background-image:  url(../images/sps_landscape.png);
-    object-fit: contain;  
-    background-size: scale;
-    overflow-y: hidden;
-    background-repeat: repeat;
-    background-position: top;
-    justify-content: center;
-    align-items: center;
-}
 
-#chamber_hero #call_to_action h2 {
-    display: flex;
-    position: relative;
-    text-align: center;
-    margin-left: 25px;
-    margin-top: 25px;
-    vertical-align: middle;
-    text-decoration: double;
-    grid-template-rows: 1;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    font-size: 2.8em;
-    font-weight: bold;
-    color: white;
-}
-.main-container {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: 1fr;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
-.main-container .current-event {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-template-rows: 1fr;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: auto;
-    background-color: yellow;
-    color: black;
-    font-size: 1.6em;
-    text-align: center;
-    align-items: center;
-    justify-content: middle;
-}
 
-.main-container .spotlight {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-template-rows: 1fr;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: auto;
-    background-color: yellow;
-    text-align: center;
-    align-items: center;
-    justify-content: middle;
-}
 
-.main-container .spotlight img {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-footer {
-    display: grid;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .60fr .40fr;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    height: auto;
-    background-color: limegreen;
-}
-footer #sps_logo_footer {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: auto;
-    height: auto;
-    line-height: 25px;
-    padding: 0;
-    margin: 6px 6px 6px 6px;
-    align-items: center;
-    justify-content: center;
-}
-footer #sps_logo_footer img {
-    display: grid;
-    width: auto;
-    height: 130px;
-    object-fit: cover;
-    padding: 0;
-    margin: 0;
-}
-footer #chamber_footer_text {
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: auto;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-}
-footer #chamber_footer_text p {
-    display: grid;
-    font-size: 1em;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-footer #student_data {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    width: auto;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
 
