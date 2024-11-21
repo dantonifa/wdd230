@@ -5,35 +5,34 @@
         width: 100%;
     }
     header, main, footer {
-        max-width: 800px;
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
+        max-width: 640px;
+        margin: 1rem auto;
         border:1px solid #bbb;
+        padding: 1rem;
+        background-color: #e6f2ff;
+    }
+    header {
         background-color: black;
-        color: white;
-        align-content: left;
+        color:white;
     }
 
     main {
         display: grid;
-        position: relative;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
+        grid-gap: 1rem;
     }
-    .document_title {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        background-color: azure;
-        color: navy;
-        text-align: center;
-        border-bottom: 3px solid navy;
-    }
-
     section {
         padding: 1rem;
-        color: white;
+        background-color: white;
+        border:1px solid #bbb;
+    }
+    h2 {
+        color: black;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+        color:black;
     }
 }
