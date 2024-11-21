@@ -1,14 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
-    display: block
 }
 header, main, footer {
-    max-width: 500px;
+    max-width: 640px;
     margin: 1rem auto;
     border:1px solid #bbb;
     padding: 1rem;
     background-color: #e6f2ff;
-    padding-right: 1rem;
 }
 main {
     display: grid;
@@ -19,11 +17,5 @@ main {
 
 section {
     padding: 1rem;
-    padding-right: 1rem;
-    margin-right: 1rem;
     background-color: #fff;
-}
-p {
-    font-size: 1.6em;
-    color:aliceblue
 }
