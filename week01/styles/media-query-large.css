@@ -1,0 +1,39 @@
+@media screen and (min-width: 500px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        display:block;
+        width: 100%;
+    }
+    header, main, footer {
+        max-width: 800px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        border:1px solid #bbb;
+        background-color: black;
+        color: white;
+        align-content: left;
+    }
+
+    main {
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    .document_title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: azure;
+        color: navy;
+        text-align: center;
+        border-bottom: 3px solid navy;
+    }
+
+    section {
+        padding: 1rem;
+        color: white;
+    }
+}
