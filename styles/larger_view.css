@@ -1,181 +1,192 @@
 /* HTML Selectors */
 @media screen and (min-width:481px) {
     body {
-        margin-top: 0px;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px auto auto auto;
-        align-items: center;
-        justify-content: center;
+        place-items:center;
+        margin-top: 0px;
+        padding-top:0px;
         font-family: 'Roboto', Helvetica, sans-serif;
+        background-color: rgba(0, 255, 140, 0.267);
     }
-    header {
+    header  {
         display:grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: .2fr .7fr;
-        height: 250px;
-        width: 100%;
+        grid-row:1/2;
+        padding-top:0;
+        padding-bottom:0;
+        height:350px;
+        width:80%;
         background-color: turquoise;
+        font-size:2.5em;
+        font-weight:bold;
+        text-align: center;
+    }
+    header .heading {
+        display:flex;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:auto;
+        margin-bottom:auto;
+        color:blue;
         
     }
-    header picture {
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-template-rows: 1fr;
-        width:auto;
-        height: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    header picture img {
-        width: 240px;
-        height: auto;
+    header .heading img {
+        display: block;
+        width: 300px;
+        height: 300px;
         border: 1px solid #ccc;
         box-shadow: 0 0 30px #777;
-        margin-right: 20px;
-        margin-left: auto;
-        align-items: center;
+        object-fit: fill;
+        margin-top:0;
+        margin-bottom:0;
     }
-    header .header_text {
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        width: auto;
-        height: auto;
-    }
-    header .header_text h1 {
-        color: navy;
-        font-weight: bold;
-        font-size: 50px;
-        text-align:left;
-        height:auto;
-        margin-left: 20px;
+    header .heading span {
+        padding-left: 20px;
+        margin-left: 50px;
         margin-top:auto;
-        margin-bottom: auto;
+        margin-bottom:auto;
     }
     nav {
         display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 70px;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        width:80%;
+        height:60px;
+    }
+    nav .menu{
+        display:grid;
+        align-items: center;
+        list-style-type: none;
+        text-align:center;
+        grid-template-columns: repeat(4,1fr);
+        grid-row:2/3;
         background-color: rgb(0, 247, 255);
-        width: 100%;
-        height:70px;
-        margin-top: 0;
-        margin-bottom: 0;
+        border-width:1px;
+        border-style:solid;
+        border-color: black;
+        margin-top: 0px;
+        margin-bottom: 0px;
         padding-top: 0;
+        padding-bottom: 0;
         font-size: 30px;
         font-weight: bold;
-        text-align: center;
     }
-    nav ul li {
-        display:inline;
-        margin-inline: 40px;
-        list-style-type: none;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        vertical-align: middle;
+    nav .menu ul {
+        display:grid;
+        grid-gap: 1rem;
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    nav .menu ul li{
+        display:grid;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    nav .menu ul a {
+        display:grid;
+        padding-left:12px;
+        padding-right:12px;
+        color:blue;
+        text-decoration: none;
+    }
+
+    nav .active {
+        background-color: rgba(0,0,0,0.2);
+    }
+    nav a:hover {
+        background-color: rgba(255,255,255,0.2);
     }
     nav #hamburger_menu {
         display: none;
     }
-    
-    nav ul li::hover {
-        color:red;
+    nav #close_menu {
+        display: none;
     }
     main {
+        display:grid;
+        width:80%;
+    }
+    main .main-container {
         background-color: rgba(74, 125, 137, 0.149);
-        width: 100%;
         display: grid;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-row:3/5;
+    }
+    main .main-title {
+        display:grid;
         align-items: center;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        
-    }
-    main .hero {
-        display: grid;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-template-columns: 1fr 1fr;
-        width: auto;
-        height: auto;
-        margin-left: 0px;
-        margin-top: 0x;
-        background-color: azure;
-    }
-    main .hero .hero_text {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        width: auto;
-        height: auto;
-    }
-    main .hero .hero_text h2 {
-        height: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-        font-size: 35px;
+        grid-row:3/4;
+        height:70px;
+        font-size: 25px;
         font-weight: bold;
-        color: navy;
-        text-align: right;
+        color: rgba(21, 62, 244, 0.976);
+        text-align: center;
     }
-    main .hero_img {
+    main .main-title h1 {
+        display:grid;
+        margin-top:auto;
+        margin-bottom:auto;
+    }
+    main .cards-container{
+        display:grid;
+        height:310px;
+        grid-row:4/5;
+        grid-template-columns:.7fr .3fr;
+        border-width:1px;
+        border-style:solid;
+        border-color: black;
+    }
+    main #card-1 {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        width: auto;
-        height: auto;
-        margin-left: 20px;
-    }
-    main .hero_img img {
-        width: auto;
-        height: 450px;
-        margin-left: 20px;
+        width:900px;
+        height:268.14px;
         margin-top: auto;
         margin-bottom: auto;
-        resize: both;
-        object-fit: scale-down;
-    }
-    main .card {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        width: auto;
-        height: auto;
-        margin-top: 20px;
-        margin-left: auto;
+        margin-left: 100px;
         margin-right: auto;
+        border-width:10px;
+        padding:10px;
+        border-style:solid;
+        border-color: black;
     }
-    main .card h2,h3 {
+    main #card h2 {
         font-size: 25px;
         font-weight: bold;
         color: black;
         text-align: center;
     }
-    
     main .card ul {
         list-style-type : none;
         margin-top: 10px;
         margin-bottom: 10px;
-        margin-left: 400px;
         padding-bottom: 10px;
         font-size: 25px;
         font-weight: bold;
         color: black;
     }
+    main #card-2 {
+        display: grid;
+        grid-template-rows:50px 1fr;
+        width:700px;
+        height:268.14px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 100px;
+        margin-right:auto;
+        border-width:10px;
+        padding:10px;
+        border-style:solid;
+        border-color: black;
+    }
+    main #card-2 h2 {
+        font-size: 25px;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
     footer {
         display: grid;
+        grid-row:5/7;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         background-color: gray;
@@ -183,6 +194,7 @@
         padding: 15px;
         bottom: 0;
         height: auto;
+        font-size:30px;
     }
     footer .copy_right {
         display: grid;
@@ -195,7 +207,7 @@
         text-align: right;
     }
     footer .copy_right p {
-        font-size: 15px;
+        font-size: 30px;
         width: 100%;
         height: auto;
     }
@@ -205,7 +217,7 @@
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-        width: 100%;
+        width: auto;
         height: auto;
         text-align: left;        
     }
