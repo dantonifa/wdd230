@@ -1,0 +1,105 @@
+@media only screen and (max-width: 480px) {
+  header {
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    height: 250px;
+    background-color: turquoise;
+    width: 100%;
+}
+header picture {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-rows: 1fr;
+    width:auto;
+    height: auto;
+    align-items: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header picture img {
+    width: 50px;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px #777;
+    margin-right: 20px;
+    margin-left: auto;
+}
+header .header_text {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: auto;
+    height: auto;
+}
+header .header_text h1 {
+    color: navy;
+    font-weight: bold;
+    font-size: 20px;
+    text-align:left;
+    height:auto;
+    margin-left: 3px;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+  #navigation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background-color: yellow;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+  }
+  #navigation-container ul li a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.8em;
+  }
+ 
+  #navigation-container a:hover {
+    background-color: lime;
+    color: black;
+    font-weight: 700;
+  }
+  #navigation-container ul {
+    list-style: none;
+    display: none;
+  }
+  #navigation-container #menu {
+    border: 0;
+    background-color: aliceblue;
+    position: absolute;
+    top: 106px;
+    right: 6px;
+  }
+  #navigation-container #menu img {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  #navigation-container #close {
+    display: none;
+    border: 0;
+    background-color: aliceblue;
+    position: absolute;
+    top: 106px;
+    right: 6px;
+  } 
+  #navigation-container #close img {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+
+}
