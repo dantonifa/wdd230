@@ -23,138 +23,128 @@
     </head>
     <body>
         <header>
-            <picture>
-                <img src="images/placeholder.png" alt="Profile image">
-            </picture>
-            <div class="header_text">
-                <h1>
-                    David Antonio Fajardo Ponce
-                </h1>
-            </div>
+            <p class="heading">
+                <img src="images/placeholder.png" alt="Profile image"> 
+                <span>David Antonio Fajardo Ponce</span>
+            </p>
         </header>
         <nav>
-            <ul id="menu">
-                <li><a href = "#">Home</a></li>
-                <li><a href = "lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <ul class="menu">
+                <li><a href = "#" class="active" >Home</a></li>
                 <li><a href = "chamber/index.html">Chamber</a></li>
-                <li><a href = "https://www.byui.edu/">BYU-Idaho</a></li>
-                <li><a href = "http://tinyurl.com/y6fnc9h3">Scripture</a></li>
+                <li><a href = "lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href = "#">Form</a></li>
             </ul>
-            <button type="button" onclick="toggle('#menu')" id="hamburger_menu">
-                <img src="images/hamburger_favicon.ico" alt="Menu Icon">
-            </button>
-            <button type="button" onclick="toggle('#menu')" id="close_menu">
-                <img src="images\cross_favicon.ico" alt="Close Icon">       
-            </button>    
         </nav>
         <main>
-            <div class="hero">
-                <div class="hero_text">
-                    <h2>
-                        Tegucigalpa Honduras Temple
-                    </h2>
+            <div class="main-container">
+                <div class="main-title">
+                    <h1>
+                        WDD 230: Web Frontend Development
+                    </h1>
                 </div>
-                <picture class="hero_img">
-                    <img src="lesson06/images/tegucigalpa_temple.webp" alt="Hero Image">
-                </picture>
-            </div>
-            <div class="card">
-                <h3>
-                    WDD 230: Web Frontend Development
-                </h3>
-                <h3>
-                    Lessons and Learning Activities
-                </h3>
-                <ul>
-                    <li>01:
-                        <a href = "lesson01/holygrail.html">
-                            Holy Grail Layout
-                        </a>
-                    </li>
-                    <li>02:
-                        <a href = "lesson02/design.html">Contrast Principle</a>
-                        <a> </a>
-                        <a>|</a>
-                        <a> </a>
-                        <a href = "lesson02/design-principles.html">
-                            Application of three design principles
-                        </a>
-                        <a> </a>
-                        <a>|</a>
-                        <a> </a>
-                        <a href = "lesson02/media-query.html">
-                            Media Query
-                        </a>
-                    </li>
-                    <li>03:
-                        <a href="images/css_combinators.png" title="CSS Combinators">CSS Combinators</a>
-                        <a> </a>
-                        <a>|</a>
-                        <a> </a>
-                        <a href="https://codepen.io/dantonifa/pen/MWxVGPJ" title="CSS Pseudo-Elements">
-                            CSS Pseudo-Elements
-                        </a>
-                        <a> </a>
-                        <a>|</a>
-                        <a> </a>
-                        <a href="https://codepen.io/dantonifa/pen/YzMVQMv" title="Responsive Menu">
-                            Responsive Menu 
-                        </a>
-                    </li>
-                    <li>04:
-                        <a href="https://codepen.io/dantonifa/pen/rNbwKRP" title="CSS Pseudo-Classes">
-                            CSS Pseudo-Classes
-                        </a>
+                <div class="cards-container">
+                    <section id="card-1">
+                        <h2>
+                            Learning Activities
+                        </h2>
+                        <ul>
+                            <li>01:
+                                <a href = "lesson01/holygrail.html">
+                                    Holy Grail Layout
+                                </a>
+                            </li>
+                            <li>02:
+                                <a href = "lesson02/design.html">Contrast Principle</a>
+                                <a> </a>
+                                <a>|</a>
+                                <a> </a>
+                                <a href = "lesson02/design-principles.html">
+                                    Application of three design principles
+                                </a>
+                                <a> </a>
+                                <a>|</a>
+                                <a> </a>
+                                <a href = "lesson02/media-query.html">
+                                    Media Query
+                                </a>
+                            </li>
+                            <li>03:
+                                <a href="images/css_combinators.png" title="CSS Combinators">CSS Combinators</a>
+                                <a> </a>
+                                <a>|</a>
+                                <a> </a>
+                                <a href="https://codepen.io/dantonifa/pen/MWxVGPJ" title="CSS Pseudo-Elements">
+                                    CSS Pseudo-Elements
+                                </a>
+                                <a> </a>
+                                <a>|</a>
+                                <a> </a>
+                                <a href="https://codepen.io/dantonifa/pen/YzMVQMv" title="Responsive Menu">
+                                    Responsive Menu 
+                                </a>
+                            </li>
+                            <li>04:
+                                <a href="https://codepen.io/dantonifa/pen/rNbwKRP" title="CSS Pseudo-Classes">
+                                    CSS Pseudo-Classes
+                                </a>
+        
+                            </li>
+                            <li>05
+                                <a href="lesson05/bom.html" title="Book of Mormon Favorite Chapters"> 
+                                    Book of Mormon Favorite Chapters
+                                </a>
+                            </li>
+                            <li>06
+                                <a href="lesson06/images/landscape.webp" title="Landscape Image">
+                                    WebP Image File Format
+                                </a>
+                                <a> </a>
+                                <a>|</a>
+                                <a> </a>
+                                <a href="lesson06/responsive-images.html" title="Responsive Images">
+                                    Responsive Images: srcset
+                                </a>
+                            </li>
+                            <li>07
+                                <a href="lesson07/lazyload.html" title="Lazy Load">
+                                    Lazy Loading
+                                </a>
+                                <a> </a>
+                                <a>|</a>
+                                <a> </a>
+                                <a href="lesson07/bom.html" title="Book of Mormon Favorite Chapters">
+                                    Book of Mormon Favorite Chapters
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="card-2">
+                        <div class="card-2-title">
+                            <h2>Information</h2>
+                        </div>
+                        <div class="information">
 
-                    </li>
-                    <li>05
-                        <a href="lesson05/bom.html" title="Book of Mormon Favorite Chapters"> 
-                            Book of Mormon Favorite Chapters
-                        </a>
-                    </li>
-                    <li>06
-                        <a href="lesson06/images/landscape.webp" title="Landscape Image">
-                            WebP Image File Format
-                        </a>
-                        <a> </a>
-                        <a>|</a>
-                        <a> </a>
-                        <a href="lesson06/responsive-images.html" title="Responsive Images">
-                            Responsive Images: srcset
-                        </a>
-                    </li>
-                    <li>07
-                        <a href="lesson07/lazyload.html" title="Lazy Load">
-                            Lazy Loading
-                        </a>
-                        <a> </a>
-                        <a>|</a>
-                        <a> </a>
-                        <a href="lesson07/bom.html" title="Book of Mormon Favorite Chapters">
-                            Book of Mormon Favorite Chapters
-                        </a>
-                    </li>
-                </ul>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </main>
         <footer>
-            <div class="copy_right">
-                <p>
-                &copy;<span id="year"></span>
-                | David Antonio Fajardo Ponce | Honduras
-                </p>
-            </div>
+            <p>
+               &copy;<span id="year"></span>
+               | David Antonio Fajardo Ponce | Honduras
+            </p>
             <div class="flag">
                 <img src = "images/Honduras_flag.png" alt = "Honduras Flag">
             </div>
-            <div class = "last_modified">
+            <div id = "last_modified">
                 <p>
                 Last Modified:
                 </p>
             </div>
         </footer>
-            
     </body>
 </html>
+
 
 
