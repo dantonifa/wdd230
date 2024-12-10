@@ -187,7 +187,7 @@
     footer {
         display: grid;
         grid-row:5/7;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         background-color: gray;
         color: white;
@@ -195,43 +195,28 @@
         bottom: 0;
         height: auto;
         font-size:30px;
+        text-align: center;
     }
-    footer .copy_right {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        width: 100%;
-        height: auto;
-        text-align: right;
+    footer #flag-container {
+        display:flex;
+        align-items: center;
+        justify-content: center;
     }
-    footer .copy_right p {
+    footer #text {
         font-size: 30px;
-        width: 100%;
-        height: auto;
+        margin-top:auto;
+        margin-bottom:auto;
+        float:right;
     }
-    footer .flag {
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        width: auto;
-        height: auto;
-        text-align: left;        
-    }
-    footer .flag img {
-        display: grid;
+    footer img {
+        display:flex;
+        float:right;
         resize: both;
-        width: 100px;
-        margin-left: 6px;
-        margin-top: auto;
-        margin-bottom: auto;
+        width: 150px;
         height: auto;
-        text-align: left;   
+        margin-left: 6px;
     }
-    footer .last_modified {
+    footer #last_modified {
         display: grid;
         grid-column-start: 1;
         grid-column-end: 3;
