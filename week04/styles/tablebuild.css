@@ -1,0 +1,31 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th {
+    padding: 5px;
+    text-align: left;
+  }
+  td{
+    text-align:center;
+  }
+#blank-rows{
+  background-color:black;
+}
+#heading  {
+  background-color:black;
+  color:white;
+  padding:0px;
+  margin:0px;
+  border:none;
+}
+#services{
+  background-color:rgba(20, 12, 12, 0.699);
+  color:white;
+}
+#feature2-row {
+  background-color:rgba(11, 8, 8, 0.164);
+}
+h1{
+  font-size:15px;
+}

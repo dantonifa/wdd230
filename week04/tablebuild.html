@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "description" content = "WDD 230 - Web Frontend Development, HTML Tables for Data Presentation">
+        <meta name = "author" content = "Student: David Antonio Fajardo Ponce">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="David Antonio Fajardo Ponce - WDD 230 - Web Frontend Development">
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="123456789">
+        <meta property="og:description" content="WDD 230 - Web Frontend Development, HTML Tables for Data Presentation">
+        <meta property="og:url" content="https://dantonifa.github.io/wdd230/">
+        <title>"WDD 230 - Web Frontend Development HTML Tables for Data Presentation"</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/tablebuild.css">
+        <script src="scripts/toggle.js"></script>
+    </head>
+    <table>
+        <col>
+        <colgroup span="3"></colgroup>
+        <thead>
+            <tr>
+                <td id="blank-rows" rowspan="2"></td>
+                <th id="heading" colspan="3" scope="colgroup"> 
+                    ACME Wildwest Services
+                </th>
+            </tr>
+            <tr id="services">
+                <th>Basic</th>
+                <th>Premium</th>
+                <th>Deluxe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Feature1</th>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr id="feature2-row">
+                <th>Feature2</th>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <th>Feature3</th>
+                <td>❌</td>
+                <td>❌</td>
+                <td>✔️</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>
+        Table 1: Account Feature Comparison
+    </h1>
+</html>
