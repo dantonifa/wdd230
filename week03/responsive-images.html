@@ -12,12 +12,10 @@
     </head>
     <body>
         <header>
-            <header>
-                <p class="heading">
-                    <img src="images/placeholder.webp" alt="Profile image"> 
-                    <span>David Antonio Fajardo Ponce</span>
-                </p>
-            </header>
+            <div class="heading">
+                <img src="images/placeholder.png" alt="Profile image"> 
+                <span>David Antonio Fajardo Ponce</span>
+            </div>
             <nav>
                 <ul class="menu">
                     <li><a href = "wdd230/index.html" class="active">Home</a></li>
@@ -26,16 +24,18 @@
                     <li><a href = "wdd230/form.html">Form</a></li>
                 </ul>
             </nav>
-            <h1>Responsive Images</h1>
         </header>
         <main>
-            <div class = "hero">
+                <div class="main-title">
+                    <h1>
+                        Responsive Images
+                    </h1>
+                </div>
                 <picture>
                     <source srcset="images/hero-small.webp" media="(max-width: 500px)">
                     <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
                     <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
                 </picture>
-            </div>
         </main>
         <footer>
             <div id="flag-container">
@@ -56,5 +56,5 @@
         </footer>
         <script src="scripts/getdates.js"></script>
     </body>
-
 </html>
+
