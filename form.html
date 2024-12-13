@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "description" content = "WDD 230 - Web Frontend Development, W04: Team Activity - Form">
+        <meta name = "author" content = "David Antonio Fajardo Ponce">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="David Antonio Fajardo Ponce - WDD 230 - Web Frontend Development">
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="123456789">
+        <meta property="og:description" content="WDD 230 - Web Frontend Development, David Antonio Fajardo Ponce,
+                            course assignment portal">
+        <meta property="og:url" content="https://dantonifa.github.io/wdd230/">
+        <title>"WDD 230 - Web Frontend Development -W04: Team Activity - Form"</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/form.js"></script>
+    </head>
+<body>
+    <header>
+        <p class="heading">
+            <img src="images/placeholder.png" alt="Profile image"> 
+            <span>David Antonio Fajardo Ponce</span>
+        </p>
+    
+        <nav>
+            <ul class="menu">
+                <li><a href = "wdd230/index.html" class="active" >Home</a></li>
+                <li><a href = "chamber/index.html">Chamber</a></li>
+                <li><a href = "lesson03/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href = "#">Form</a></li>
+            </ul>
+        </nav>
+</header>
+    <main>
+        <form method="get" action="thanks.html">
+            <div id="formmessage"></div>
+	        <h1>Contact Us</h1>
+            <p class="smaller">*️⃣ Indicates a required field</p>
+            
+            <label for="user-name" class="req">Username</label>
+            <input type="text" id="username" name="username" title="Enter your username" required 
+            placeholder="Please enter your full name"/>
+
+            <label for="password" class="req">Password</label>
+            <input type="password" id="password" name="password"  pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+
+            <label for="confirm-password" class="req">Confirm Password</label>
+            <p id="password-rules">
+                Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters
+            </p>
+            <input type="password" id="confirm-password" name="confirm-password"  
+            pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+            <label for="email" class="req">Email Address</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$ or 
+            [a-zA-Z0-9._%+-]+@byui\.edu" placeholder="Please use your school email address">
+            
+            
+            <label  for="rating" class="req">Page Rating</label>
+            <p id="rating-rules">Allow values from 1 to 10 with.</p>
+            <input type="number" id="rating" name="rating" min="1" max="10" step="1" required>
+            
+            <label for="submit" class="req">Give us the rating</label>
+            <input type="submit" id="submit" name="submit" value="Rate us!">
+        </form>
+    </main>
+    <footer>
+        <div id="flag-container">
+            <div id="text">
+                <p>
+                    &copy;<span id="currentyear"></span> | David Antonio Fajardo Ponce | Honduras
+                </p>
+            </div>
+            <div id="flag">
+                <img src = "images/Honduras_flag.png" alt = "Honduras Flag">
+            </div>
+        </div>
+        <div id="last_modified">
+            <p>
+            Last Modified: <span  id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
