@@ -1,0 +1,174 @@
+body {
+    display: grid;
+    place-items:center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0px;
+    padding-top:0px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    background-color: rgba(0, 255, 140, 0.267);
+}
+header  {
+    display:grid;
+    grid-row-start:1;
+    grid-row-end:2;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:0;
+    padding-bottom:0;
+    height:350px;
+    width:80%;
+    background-color: turquoise;
+    font-size:30px;
+    font-weight:bold;
+    text-align: center;
+}
+header .heading {
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    color:blue;
+    
+}
+header .heading img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px #777;
+    object-fit: fill;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+header .heading span {
+    padding-left: 20px;
+    margin-left: 50px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+nav {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    display:grid;
+    width:100%;
+    height:60px;
+}
+nav .menu{
+    display:grid;
+    align-items: center;
+    list-style-type: none;
+    text-align:center;
+    grid-template-columns: repeat(4,1fr);
+    grid-row:2/3;
+    background-color: rgb(0, 247, 255);
+    border-width:1px;
+    border-style:solid;
+    border-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav .menu ul {
+    display:grid;
+    grid-gap: 1rem;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+nav .menu ul li{
+    display:grid;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+nav .menu ul a {
+    display:grid;
+    padding-left:12px;
+    padding-right:12px;
+    color:blue;
+    text-decoration: none;
+}
+
+nav .active {
+    background-color: rgba(0,0,0,0.2);
+}
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+nav #hamburger_menu {
+    display: none;
+}
+nav #close_menu {
+    display: none;
+}
+main {
+    display:grid;
+    grid-row-start:3;
+    grid-row-end:4;
+    width:80%;
+    background-color: rgba(0, 255, 140, 0.267);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.hero img {
+    display:grid;
+    grid-row:3/4;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    width: 100%;
+    height: auto;
+  }
+  footer {
+    display: grid;
+    grid-row-start:4;
+    grid-row-end:5;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    bottom: 0;
+    width:80%;
+    height: auto;
+    font-size:30px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    height: 300px;
+	background-color: #19f0c9;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+footer #flag-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+footer #text {
+    font-size: 30px;
+    margin-top:auto;
+    margin-bottom:auto;
+    float:right;
+}
+footer img {
+    display:flex;
+    float:right;
+    resize: both;
+    width: 150px;
+    height: auto;
+    margin-left: 6px;
+}

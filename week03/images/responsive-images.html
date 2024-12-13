@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "description" content = "WDD 230 - Web Frontend Development, W03: Responsive Images: srcset">
+        <meta name = "author" content = "Student: David Antonio Fajardo Ponce">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="David Antonio Fajardo Ponce - WDD 230 - Web Frontend Development">
+        <meta property="og:type" content="website">
+        <meta property="fb:app_id" content="123456789">
+        <meta property="og:description" content="WDD 230 - Web Frontend Development, David Antonio Fajardo Ponce,
+                            course assignment portal">
+        <meta property="og:url" content="https://dantonifa.github.io/wdd230/">
+        <title>"WDD 230 - Web Frontend Development W03: Responsive Images: srcset"</title>
+        <link rel="stylesheet" href="styles/responsive-images.css">
+        
+    </head>
+    <body>
+        <header>
+            <p class="heading">
+                <img src="images/placeholder.png" alt="Profile image"> 
+                <span>David Antonio Fajardo Ponce</span>
+            </p>
+        
+            <nav>
+                <ul class="menu">
+                    <li><a href = "wdd230/index.html" class="active" >Home</a></li>
+                    <li><a href = "chamber/index.html">Chamber</a></li>
+                    <li><a href = "lesson03/chamber-site-plan.html">Site Plan</a></li>
+                    <li><a href = "#">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                  <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                  <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                  <img src="week03/images/hero-large.webp" alt="Hero image" width="1500" height="750">
+                </picture>
+              </div>
+        </main>
+    </body>
+    </html>
