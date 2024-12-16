@@ -1,105 +1,166 @@
 @media only screen and (max-width: 480px) {
-  header {
-    display:grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 0.5fr 0.5fr;
-    height: 250px;
-    background-color: turquoise;
-    width: 100%;
-header picture {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-template-rows: 1fr;
-    width:auto;
-    height: auto;
-    align-items: right;
-    margin-top: auto;
-    margin-bottom: auto;
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-header picture img {
+header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: turquoise;
+    margin: 0;
+    padding: 0;
+}
+header #sps-logo {
+    display: flex;
     width: 50px;
     height: auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 30px #777;
-    margin-right: 20px;
-    margin-left: auto;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px;
 }
-header .header_text {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: auto;
-    height: auto;
-}
-header .header_text h1 {
-    color: navy;
-    font-weight: bold;
-    font-size: 20px;
-    text-align:left;
-    height:auto;
-    margin-left: 3px;
-    margin-top:auto;
-    margin-bottom: auto;
-}
-  #navigation-container {
+header #sps_logo_text {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    background-color: yellow;
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
     padding: 0;
     margin: 0;
-  }
-  #navigation-container ul li a {
-    color: black;
-    font-weight: bold;
-    font-size: 1.8em;
-  }
- 
-  #navigation-container a:hover {
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    height:auto;
+    background-color: yellow;
+}
+#menu {
+	position: relative;
+    top:-350px;
+    left:0;
+    z-index: 3;
+	font-size: 50px;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: #000;
+    font-weight:bold;
+    position:relative;
+}
+#menu::before {
+	content: "≡";
+}
+.nav-link {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+.nav-link li {
+    display: none;
+}
+.nav-link li a{
+    display:block;
+    margin-top:40px;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    text-align:left;
+    text-decoration:none;
+    background-color: yellow;
+    color:black;
+    font-size:25px;
+    font-weight:bold;
+    transition: background-color 0.5s;
+}
+nav .nav-link a:hover, nav .nav-link a:active {
     background-color: lime;
     color: black;
-    font-weight: 700;
+    font-weight: bold;
   }
-  #navigation-container ul {
-    list-style: none;
-    display: none;
-  }
-  #navigation-container #menu {
-    border: 0;
-    background-color: aliceblue;
-    position: absolute;
-    top: 106px;
-    right: 6px;
-  }
-  #navigation-container #menu img {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
+.show li{
+    display:block;
+}
+#menu.show::before {
+	content: "X";
+}
+nav #chamber_hero {
+    width:100%;
+    height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0;
+    background-image:  url(../images/sps_landscape.png);
+    object-fit: contain;  
+    background-size: scale;
+    overflow-y: hidden;
+    background-repeat: repeat;
+    background-position: top;
+    justify-content: center;
+    align-items: center;
+}
+nav #chamber_hero #call_to_action h2 {
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 25px;
+    vertical-align: middle;
+    text-decoration: double;
+    grid-template-rows: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 2.8em;
+    font-weight: bold;
+    color: white;
+}
+.main-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: greenyellow;
+
+}
+.main-container .spotlight{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+.main-container .spotlight img{
+    display:flex;
     object-fit: cover;
-  }
-  #navigation-container #close {
-    display: none;
-    border: 0;
-    background-color: aliceblue;
-    position: absolute;
-    top: 106px;
-    right: 6px;
-  } 
-  #navigation-container #close img {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-  }
-  main{
+    width:100%;
+    height:auto;
+}
+.main-container .weather{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    height:300px;
+    align-items: center;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+.weather p{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+}
+main{
     display:grid;
     grid-template-rows: 350px 350px 350px 350px 350px 350px;
     grid-row-start: 4;
@@ -393,7 +454,7 @@ footer {
     margin-top:10px;
     margin-bottom:auto;
     padding: 0;
-    width: 80%;
+    width: 100%;
     height: auto;
     font-size:20px;
     font-weight:bold;
@@ -456,6 +517,4 @@ footer #student_data {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-}
-
 }
