@@ -1,0 +1,79 @@
+const weeks = [
+    {
+    "week": "Week 1",
+    "links": [
+        {
+            "url":"week01/holygrail.html",
+            "title":"Holy Grail"
+        },
+        {
+            "url":"week01/media-query.html",
+            "title":"Media Query"
+        },
+        {
+            "url":"week01/positioning.html",
+            "title":"Positioning"
+        },
+    ]
+},
+    {
+    "week": "Week 2"
+    "links": [
+        {
+            "url":"week02/design.html",
+            "title":"Design"
+        },
+        {
+            "url":"https://codepen.io/dantonifa/pen/YzMVQMv",
+            "title":"Pseudo-elements"
+        },
+        {
+            "url":"week02/design.html",
+            "title":"Design"
+        },
+    ]
+},
+    {
+    "week": "Week 3"
+    "links": [
+        {
+            "url":"week03/images/landscape.webpl",
+            "title":"Landscape image"
+        },
+        {
+            "url":"week03/responsive-images.html",
+            "title":"Responsive images"
+        },
+        {
+            "url":"https://codepen.io/dantonifa/pen/rNbwKRP",
+            "title":"CSS Pseudo-classes"
+        },
+        {
+            "url":"https://codepen.io/dantonifa/pen/YzMVQMv",
+            "title":"Pseudo-elements"
+        },
+    
+        {
+            "url":"week03/images/landscape.webpl",
+            "title":"Landscape image"
+        },
+    ]
+},
+    {
+    "week": "Week 4"
+    "links": [
+        {
+            "url":"week04/tablebuild.html",
+            "title":"Table build"
+        },
+    ]
+},
+    {
+    "week": "Week 5"
+    "links": [
+        {
+            "url":"lesson05/bom.html",
+            "title":"BOM"
+        }
+    ]
+}
